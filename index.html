@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick ="clearDisplay()" class="item item-grey">C</button>
+            <button onclick="backSpace()" class="item item-grey">+/-</button>
+            <button onclick="updateDisplay('%')" class="item item-grey">%</button>
+            <button onclick="updateDisplay(' / ')" class="item item-orange">/</button>
+            <button onclick="updateDisplay(7)" class="item item-darkgrey">7</button>
+            <button onclick="updateDisplay(8)"class="item item-darkgrey">8</button>
+            <button onclick="updateDisplay(9)" class="item item-darkgrey">9</button>
+            <button onclick="updateDisplay(' * ')" class="item item-orange">*</button>
+            <button onclick="updateDisplay(4)" class="item item-darkgrey">4</button>
+            <button onclick="updateDisplay(5)" class="item item-darkgrey">5</button>
+            <button onclick="updateDisplay(6)" class="item item-darkgrey">6</button>
+            <button onclick="updateDisplay(' - ')" class="item item-orange">-</button>
+            <button onclick="updateDisplay(1)" class="item item-darkgrey">1</button>
+            <button onclick="updateDisplay(2)" class="item item-darkgrey">2</button>
+            <button onclick="updateDisplay(3)" class="item item-darkgrey">3</button>            
+            <button onclick="updateDisplay(' + ')" class="item item-orange">+</button>
+            <button onclick="updateDisplay(0)" class="item item-darkgrey">0</button>
+            <button onclick="updateDisplay('.')" class="item item-darkgrey" >.</button>
+            <button onclick="calculate()" class="item item-orange">=</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
